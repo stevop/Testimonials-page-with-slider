@@ -12,11 +12,17 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 32px;
   height: 100vw;
+  overflow: hidden;
   width: 100vw;
 }
 
-main {
+.container {
+  background-image: url(../images/pattern-curve.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 300px;
   max-width: 375px;
+  padding-bottom: 2.5em;
 }
 
 .section {
@@ -34,7 +40,7 @@ main {
 }
 .section .wrapper .profile-pic {
   border-radius: 10px;
-  box-shadow: 10px 10px 10px hsl(240deg, 18%, 77%);
+  box-shadow: 10px 20px 80px hsl(240deg, 18%, 77%);
   height: auto;
   width: 75%;
 }
@@ -58,13 +64,34 @@ main {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 20%;
+  font-size: 0.625em;
   font-weight: 300;
-  margin: 3em 0;
+  margin: 4em 0 1em;
   padding: 1em;
   text-align: center;
 }
+.section .person-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section .person-info .name {
+  font-size: 0.5em;
+  font-weight: 700;
+}
+.section .person-info .occupation {
+  color: hsl(240deg, 18%, 77%);
+  font-size: 0.5em;
+}
+
+.section-1 {
+  opacity: 1;
+  display: block;
+}
 
 .section-2 {
+  opacity: 0;
   display: none;
 }
 
