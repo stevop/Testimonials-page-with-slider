@@ -99,13 +99,19 @@ body{
 }
 
 .section-1{
-    opacity: 1;
-    display: block;
+    display: none;
 }
 
 .section-2{
-    opacity: 0;
     display: none;
+}
+
+.section-2.active{
+    display: block;
+}
+
+.section-1.active{
+    display: block;
 }
 
 // ATTRIBUTION
