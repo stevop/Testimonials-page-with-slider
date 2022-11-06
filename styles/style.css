@@ -19,21 +19,24 @@ main {
   max-width: 375px;
 }
 
+.section {
+  background-image: url(../images/pattern-bg.svg);
+  background-position: center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 .section .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/pattern-bg.svg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
 }
 .section .wrapper .profile-pic {
   border-radius: 10px;
+  box-shadow: 10px 10px 10px hsl(240deg, 18%, 77%);
   height: auto;
-  width: 80%;
+  width: 75%;
 }
 .section .wrapper .slider {
   display: flex;
@@ -46,6 +49,19 @@ main {
   position: absolute;
   bottom: -18px;
   width: 80px;
+}
+.section .wrapper .slider .previous-next {
+  cursor: pointer;
+}
+.section .text {
+  background-image: url(../images/pattern-quotes.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  font-weight: 300;
+  margin: 3em 0;
+  padding: 1em;
+  text-align: center;
 }
 
 .section-2 {

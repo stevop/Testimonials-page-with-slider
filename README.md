@@ -30,5 +30,5 @@ Users should be able to:
 
 ## Author
 
-- Website - Stefan Pacola (https://github.com/stevop)
+- Website - https://github.com/stevop
 - Frontend Mentor - [@stevop ](https://www.frontendmentor.io/profile/stevop)
