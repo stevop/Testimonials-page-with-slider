@@ -8,10 +8,10 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
   font-family: "Inter", sans-serif;
   font-size: 32px;
   height: 100vw;
+  margin-top: 1em;
   overflow: hidden;
   width: 100vw;
 }
@@ -22,35 +22,42 @@ body {
   background-repeat: no-repeat;
   background-size: 300px;
   max-width: 375px;
-  padding-bottom: 2.5em;
+  padding: 0 1em 2.5em;
 }
 @media (min-width: 1440px) {
   .container {
     max-width: 1200px;
   }
 }
-
-.section {
-  background-image: url(../images/pattern-bg.svg);
-  background-position: center top;
-  background-size: contain;
-  background-repeat: no-repeat;
+@media (min-width: 1440px) {
+  .container .section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
-.section .wrapper-top {
+.container .section .wrapper-top {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  background-image: url(../images/pattern-bg.svg);
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0.5em;
+  width: 100%;
 }
-.section .wrapper-top .profile-pic {
+.container .section .wrapper-top .profile-pic {
   border-radius: 10px;
   box-shadow: 10px 20px 80px hsl(240deg, 18%, 77%);
   height: auto;
-  margin-top: 1.5em;
-  width: 70%;
+  margin: 1.5em 0;
+  width: 75%;
 }
-.section .wrapper-top .slider {
+.container .section .wrapper-top .slider {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,35 +67,35 @@ body {
   box-shadow: 10px 20px 80px hsl(240deg, 18%, 77%);
   height: 40px;
   position: absolute;
-  bottom: -18px;
+  bottom: 43px;
   width: 80px;
 }
-.section .wrapper-top .slider .previous-next {
+.container .section .wrapper-top .slider .previous-next {
   cursor: pointer;
 }
-.section .wrapper-bottom .text {
+.container .section .wrapper-bottom .text {
   background-image: url(../images/pattern-quotes.svg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 20%;
-  font-size: 0.625em;
+  font-size: 0.5em;
   font-weight: 300;
   line-height: 1.5;
-  margin: 4em 0 1em;
+  margin: 1em 0 1em;
   padding: 1em;
   text-align: center;
 }
-.section .wrapper-bottom .person-info {
+.container .section .wrapper-bottom .person-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.section .wrapper-bottom .person-info .name {
+.container .section .wrapper-bottom .person-info .name {
   font-size: 0.5em;
   font-weight: 700;
 }
-.section .wrapper-bottom .person-info .occupation {
+.container .section .wrapper-bottom .person-info .occupation {
   color: hsl(240deg, 18%, 77%);
   font-size: 0.5em;
 }

@@ -10,11 +10,11 @@ $grayish-blue: hsl(240, 18%, 77%);
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
 
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     height: 100vw;
+    margin-top: 1em;
     overflow: hidden;
     width: 100vw;
 }
@@ -26,88 +26,100 @@ body{
     background-size: 300px;
 
     max-width: 375px;
-    padding-bottom: 2.5em;
+    padding: 0 1em 2.5em;
 
     @media (min-width: 1440px){
         max-width: 1200px;
     }
-}
 
-.section{
-    background-image: url(../images/pattern-bg.svg);
-    background-position: center top;
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-    .wrapper-top{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
-        .profile-pic{
-            border-radius: 10px;
-            box-shadow: 10px 20px 80px $grayish-blue;
-            height: auto;
-            margin-top: 1.5em;
-            width: 70%;
-        }
-
-        .slider{
+    .section{
+        
+        @media (min-width: 1440px){
             display: flex;
-            justify-content: center;
+            flex-direction: row-reverse;
+            justify-content: space-between;
             align-items: center;
-            gap: 20px;
     
-            background-color: white;
-            border-radius: 40px;
-            box-shadow: 10px 20px 80px $grayish-blue;
-            height: 40px;
-            position: absolute;
-            bottom: -18px;
-            width: 80px;
-
-            .previous-next{
-                cursor: pointer;
-            }
+            
         }
-    } 
-
-    .wrapper-bottom{
-
-        .text{
-            background-image: url(../images/pattern-quotes.svg);
-            background-position: top center;
-            background-repeat: no-repeat;
-            background-size: 20%;
-    
-            font-size: .625em;
-            font-weight: 300;
-            line-height: 1.5;
-            margin: 4em 0 1em;
-            padding: 1em;
-            text-align: center;
-        }
-    
-        .person-info{
+        
+        .wrapper-top{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative;
+
+            background-image: url(../images/pattern-bg.svg);
+            background-position: center top;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: .5em;
+            width: 100%;
     
-            .name{ 
-                font-size: .5em;
-                font-weight: 700;
+            .profile-pic{
+                border-radius: 10px;
+                box-shadow: 10px 20px 80px $grayish-blue;
+                height: auto;
+                margin: 1.5em 0;
+                width: 75%;
             }
-            .occupation{
-                color: $grayish-blue;
+    
+            .slider{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+        
+                background-color: white;
+                border-radius: 40px;
+                box-shadow: 10px 20px 80px $grayish-blue;
+                height: 40px;
+                position: absolute;
+                bottom: 43px;
+                width: 80px;
+    
+                .previous-next{
+                    cursor: pointer;
+                }
+            }
+        } 
+    
+        .wrapper-bottom{
+            .text{
+                background-image: url(../images/pattern-quotes.svg);
+                background-position: top center;
+                background-repeat: no-repeat;
+                background-size: 20%;
+        
                 font-size: .5em;
+                font-weight: 300;
+                line-height: 1.5;
+                margin: 1em 0 1em;
+                padding: 1em;
+                text-align: center;
+            }
+        
+            .person-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        
+                .name{ 
+                    font-size: .5em;
+                    font-weight: 700;
+                }
+                .occupation{
+                    color: $grayish-blue;
+                    font-size: .5em;
+                }
             }
         }
-    }
+    }    
 }
-   
+
+
 // JAVASCRPIPT CLASSES
 .section-1{
     display: none;
