@@ -54,11 +54,12 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   padding: 0.5em;
-  width: 150%;
+  width: 100%;
 }
 @media (min-width: 1440px) {
   .container .section .wrapper-top {
     background-image: none;
+    width: 150%;
   }
 }
 .container .section .wrapper-top .profile-pic {
@@ -86,6 +87,14 @@ body {
   bottom: 43px;
   width: 80px;
   z-index: 10;
+}
+@media (min-width: 1440px) {
+  .container .section .wrapper-top .slider {
+    gap: 40px;
+    left: 65px;
+    padding: 0 15px;
+    width: 90px;
+  }
 }
 .container .section .wrapper-top .slider .previous-next {
   cursor: pointer;

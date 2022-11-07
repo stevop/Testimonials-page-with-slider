@@ -55,10 +55,11 @@ body{
             background-size: contain;
             background-repeat: no-repeat;
             padding: .5em;
-            width: 150%;
+            width: 100%;
 
             @media (min-width: 1440px){
                 background-image: none;
+                width: 150%;
             }
     
             .profile-pic{
@@ -87,6 +88,13 @@ body{
                 bottom: 43px;
                 width: 80px;
                 z-index: 10;
+
+                @media (min-width: 1440px){
+                    gap: 40px;
+                    left: 65px;
+                    padding: 0 15px;
+                    width: 90px;
+                }
     
                 .previous-next{
                     cursor: pointer;
