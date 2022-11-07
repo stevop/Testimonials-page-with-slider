@@ -8,18 +8,17 @@
 body {
   display: flex;
   justify-content: center;
-  background-image: url(../images/pattern-curve.svg);
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: 300px;
   font-family: "Inter", sans-serif;
   font-size: 32px;
-  height: 100vw;
+  overflow-x: hidden;
   margin-top: 1em;
   width: 100vw;
 }
 @media (min-width: 1440px) {
   body {
+    background-image: url(../images/pattern-curve.svg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
     background-size: 750px;
     height: 100vh;
     overflow: hidden;
@@ -29,6 +28,10 @@ body {
 .container {
   max-width: 375px;
   padding: 0 1em 2.5em;
+  background-image: url(../images/pattern-curve.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 300px;
 }
 @media (min-width: 1440px) {
   .container {
