@@ -27,6 +27,10 @@ body{
 
     max-width: 375px;
     padding-bottom: 2.5em;
+
+    @media (min-width: 1440px){
+        max-width: 1200px;
+    }
 }
 
 .section{
@@ -35,7 +39,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     
-    .wrapper{
+    .wrapper-top{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -70,37 +74,41 @@ body{
         }
     } 
 
-    .text{
-        background-image: url(../images/pattern-quotes.svg);
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-size: 20%;
+    .wrapper-bottom{
 
-        font-size: .625em;
-        font-weight: 300;
-        line-height: 1.5;
-        margin: 4em 0 1em;
-        padding: 1em;
-        text-align: center;
-    }
-
-    .person-info{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .name{ 
-            font-size: .5em;
-            font-weight: 700;
+        .text{
+            background-image: url(../images/pattern-quotes.svg);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: 20%;
+    
+            font-size: .625em;
+            font-weight: 300;
+            line-height: 1.5;
+            margin: 4em 0 1em;
+            padding: 1em;
+            text-align: center;
         }
-        .occupation{
-            color: $grayish-blue;
-            font-size: .5em;
+    
+        .person-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .name{ 
+                font-size: .5em;
+                font-weight: 700;
+            }
+            .occupation{
+                color: $grayish-blue;
+                font-size: .5em;
+            }
         }
     }
 }
-
+   
+// JAVASCRPIPT CLASSES
 .section-1{
     display: none;
 }
